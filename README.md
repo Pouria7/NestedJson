@@ -20,7 +20,7 @@ dotnet build
 
 # Usage
 ## Basic Example
-```
+```csharp
 using NestedJson;
 
 // Using NestedStringDictionary with implicit conversion
@@ -33,7 +33,7 @@ Console.WriteLine(json); // {"a":"nested","DEFAULT":"root"}
 ```
 
 ## Generic Example
-```
+```csharp
 using NestedJson;
 
 // Using NestedDictionary<T>
@@ -45,7 +45,7 @@ Console.WriteLine(json); // {"x":100,"DEFAULT":42}
 ```
 
 ## Dot Notation Conversion
-```
+```csharp
 using NestedJson.Extensions;
 
 // Convert flat dictionary to nested
@@ -53,3 +53,10 @@ var flat = new Dictionary<string, string> { { "a.b.c", "value" } };
 var nested = flat.ToNested();
 Console.WriteLine(nested["a"]!["b"]!["c"]!.LastValue); // "value"
 ```
+
+## License
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for more details.
+
+## Author
+Made with ❤️ by [Pouria7](https://github.com/Pouria7)  
